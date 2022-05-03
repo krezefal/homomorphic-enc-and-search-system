@@ -26,7 +26,7 @@ def main():
     while True:
 
         print("")
-        print("'0' -> Update pk, sk (contained documents cannot be decrypted) [tmp]")
+        print("'0' -> Update public and private keys (contained documents cannot be decrypted) [tmp]")
         print("'1' -> Show my encrypted docs [tmp]")
         print("'2' -> Create new doc")
         print("'3' -> Search doc by a title")
@@ -46,7 +46,7 @@ def main():
             insert_record(pers_table, ('name', 'email', 'phone_number',                 #
                                        'public_key', 'passwd_hash'), record_to_insert)  #
 
-            print("pk, sk have been updated")
+            print("Public and private keys have been updated")
 
         elif choice == 1:
 
