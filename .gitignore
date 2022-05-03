@@ -1,0 +1,15 @@
+# Binaries
+*.exe~
+*.dll
+*.so
+*.dylib
+bin
+
+# Cache
+__pycache__
+
+# Editor and IDE paraphernalia
+.idea
+*.swp
+*.swo
+*~
