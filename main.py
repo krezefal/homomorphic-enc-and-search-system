@@ -84,7 +84,7 @@ def main():
 
             for idx, row in enumerate(records):
                 diff = calc_difference(pickle.loads(row[0]), enc_title)
-                if len(BytesIntEncoder.decode(decode_and_decrypt(diff, private_key)).decode()) == 0:
+                if len(BytesIntEncoder.decode(decode_and_decrypt(diff, private_key))) == 0:
                     doc_was_found = True
                     documents = get_records_by_value(doc_table, 'title', row)
 

@@ -16,7 +16,7 @@ class BytesIntEncoder:
 
     @staticmethod
     def decode(i: int) -> bytes:
-        return i.to_bytes(((i.bit_length() + 7) // 8), byteorder='big')
+        return i.to_bytes(((i.bit_length() + 7) // 8), byteorder='big', signed=True)
 
 
 def generate_keypair():
