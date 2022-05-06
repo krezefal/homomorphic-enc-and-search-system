@@ -4,7 +4,7 @@ from psycopg2 import sql
 
 def get_connection():
     connection = psycopg2.connect(dbname='secure_docs',
-                                  user='krezefal',
+                                  user='postgres',
                                   password='1234',
                                   host='localhost')
     return connection
